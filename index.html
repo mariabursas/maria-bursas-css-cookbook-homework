@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cookbook</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="contentDiv">
+        <div class="sectionTitle">
+          <i class="far fa-solid fa-info"></i> About
+        </div>
+
+        <label for="recipeTitle">Recipe title</label>
+        <input
+          type="text"
+          placeholder="Title"
+          id="recipeTitle"
+          class="recipeTitle"
+        />
+        <label for="recipeDescription">Description</label>
+        <textarea
+          rows="8"
+          placeholder="About the recipe"
+          id="recipeDescription"
+        ></textarea>
+        <div class="firstSectionSelectors">
+          <div>
+            <label for="quantity">Portions </label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              value="1"
+            />
+          </div>
+          <div>
+            <label for="time">Time(mins) </label>
+            <input type="number" id="time" name="time" min="1" value="1" />
+          </div>
+          <div>
+            <label for="difficulty">Difficulty </label>
+            <input
+              type="number"
+              id="difficulty"
+              name="difficulty"
+              min="1"
+              value="1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="contentDiv">
+        <div class="sectionTitle">
+          <i class="fas fa-list for"></i> Ingredients
+        </div>
+        <ul>
+          <li><i class="fas fa-angle-double-right"></i> 300 g brown rice</li>
+          <li><i class="fas fa-angle-double-right"></i> 2 pc red onions</li>
+          <li>
+            <i class="fas fa-angle-double-right"></i> 1 pc fresh red chilli
+          </li>
+          <li>
+            <i class="fas fa-angle-double-right"></i> 25 g unsalted butter
+          </li>
+          <li>
+            <i class="fas fa-angle-double-right"></i> 6 pc large free-range eggs
+          </li>
+        </ul>
+        <div class="ingredientSelectors">
+          <input type="text" placeholder="Qty." id="qty" />
+          <input type="number" id="unit" min="1" placeholder="Unit" />
+          <div>of</div>
+          <input type="text" placeholder="Ingredient" />
+          <div class="plusIcon">
+            <i class="far fa-solid fa-square-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentDiv">
+        <div class="sectionTitle"><i class="fas fa-list-ol"></i> Steps</div>
+        <div>
+          <ol>
+            <li>
+              Cook the tice in a pan of boiling salted water according to the
+              packet instructiin then drain and refresh under the cold water,
+              leaving it in the colander
+            </li>
+            <li>
+              At the same time poach the fish in a large pan of simmering salted
+              water on a medium heat for 10 minutes, then carefully remove with
+              a slotted spoon. Turn the heat up under the poaching water and
+              bring back to a good simmer.
+            </li>
+            <li>
+              Meanwhile, peel the onions and finely slice with the red
+              chilli(dressed if you like) and coriander stalks. Peel and finely
+              chop the garlic and ginger. Place it in a large frying pan on a
+              medium heat with 1 tablespoon of oil and the butter, and cook for
+              10 minutes, or until soft but not coloured, stirring ocasionally.
+            </li>
+          </ol>
+        </div>
+        <div class="stepDiv">
+          <label for="stepDescription">Step</label>
+          <textarea
+            rows="8"
+            placeholder="Step description"
+            id="stepDescription"
+          ></textarea>
+        </div>
+      </div>
+      <div class="addStep">
+        <button class="add">
+          <i class="far fa-solid fa-square-plus"></i> Add step
+        </button>
+      </div>
+      <div class="actionButtons">
+        <button class="cancel" type="reset">
+          <i class="far fa-regular fa-trash-can"></i> Cancel
+        </button>
+        <button class="save" type="submit">
+          <i class="far fa-light fa-floppy-disk"></i> Save recipe
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.sectionTitle {
+    background-color: #db4d3f;
+    color: white;
+    padding: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contentDiv,
+.addStep {
+    background-color: #f6f4f4;
+
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul i,
+.plusIcon {
+    color: #db4d3f;
+}
+
+.plusIcon {
+    size: 40px;
+}
+
+
+
+button {
+    text-align: center;
+
+}
+
+.cancel,
+.add {
+    color: #db4d3f;
+    border-radius: 2px;
+    border: 2px solid #db4d3f;
+}
+
+.ingredientSelectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ingredientSelectors>input,
+.ingredientSelectors>div {
+    flex-basis: 15%;
+}
+
+.firstSectionSelectors,
+.ingredientSelectors {
+    padding-bottom: 1%;
+}
+
+form {
+    max-width: 1000px;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.save {
+    color: white;
+    background-color: #db4d3f;
+    border-radius: 2px;
+    border: 2px solid #db4d3f;
+}
+
+#quantity,
+#time,
+#difficulty {
+    width: 25px;
+}
+
+.firstSectionSelectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.firstSectionSelectors div {
+    flex-basis: 20%;
+}
+
+.contentDiv>*:not(.sectionTitle) {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+textarea,
+.recipeTitle {
+    max-width: 1000px;
+    width: 96%;
+    height: auto;
+    padding: 0.4%;
+
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 2px;
+}
+
+.addStep>button {
+    flex-basis: 96%;
+    height: 35px;
+    background-color: white;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.actionButtons button {
+    flex-basis: 50%;
+    height: 35px;
+
+
+}
+
+.addStep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    font-weight: 700;
+    font-size: 13px;
+
+}
+
+.contentDiv>label,
+.contentDiv>input,
+.stepDiv>label,
+.stepDiv>input {
+    display: block;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+
+}
+
+button {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+textarea::placeholder,
+body, .recipeTitle::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+}
